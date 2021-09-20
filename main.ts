@@ -73,10 +73,8 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.clearScreen()
     schakelaar += 1
     if (schakelaar == 2) {
-        basic.showNumber(cijfer_1 + cijfer_2)
         if (werking == 1) {
             basic.showNumber(cijfer_1 + cijfer_2)
         } else {
@@ -91,6 +89,7 @@ input.onButtonPressed(Button.B, function () {
             }
         }
     }
+    basic.clearScreen()
 })
 basic.forever(function () {
     werking = 0
